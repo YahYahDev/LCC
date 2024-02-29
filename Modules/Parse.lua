@@ -1,5 +1,7 @@
 if str == nil then
-    str = require(str.lua)
+    str = require("Modules.Str")
+    if str == nil then
+        print("ERROR: Unable to require('Modules.Str')")
 end
 ---@class parse
 parse = {
